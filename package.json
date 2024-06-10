@@ -1,7 +1,7 @@
 {
   "name": "resume_builder",
   "version": "1.0.0",
-  "description": "Our Resume Builder web app is acomprehensive tool designed tostreamline the process of creatingprofessional resumes.",
+  "description": "Our Resume Builder web app is a comprehensive tool designed to streamline the process of creating professional resumes.",
   "main": "backend/server.js",
   "type": "module",
   "scripts": {

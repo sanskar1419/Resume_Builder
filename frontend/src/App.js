@@ -1,9 +1,9 @@
+import Navbar from "./components/Navbar/Navbar";
+
 function App() {
   return (
     <>
-      <h1 className="flex justify-center items-center font-extrabold underline">
-        This is our front page
-      </h1>
+      <Navbar />
     </>
   );
 }

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Our Resume Builder web app is acomprehensive tool designed tostreamline the process of creatingprofessional resumes.",
   "main": "backend/server.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon backend/server.js"
   },

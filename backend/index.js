@@ -2,7 +2,7 @@
 import express from "express";
 import swagger from "swagger-ui-express";
 import cors from "cors";
-// import loggerMiddleware from "./middleware/logger.middleware.js";
+import loggerMiddleware from "./middleware/logger.middleware.js";
 // import doctorRouter from "./routes/doctors.route.js";
 // import patientRouter from "./routes/patients.route.js";
 // import reportRouter from "./routes/reports.route.js";
@@ -16,7 +16,7 @@ const app = new express();
 app.use(cors());
 
 // Logging Request and Error
-// app.use(loggerMiddleware);
+app.use(loggerMiddleware);
 
 // Using body parser to parse client data
 app.use(bodyParser.urlencoded({ extended: false }));

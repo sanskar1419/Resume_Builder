@@ -1,12 +1,16 @@
 import Navbar from "./components/Navbar/Navbar";
-import { useAuthContext } from "./context/AuthContext";
-import { Navigate, Route, Routes } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
+import { useAuthContextValue } from "./context/AuthContext";
 
 function App() {
-  const { authUser } = useAuthContext();
+  const { authUser } = useAuthContextValue();
   /* React Router Configuration */
   const router = createBrowserRouter([
     {

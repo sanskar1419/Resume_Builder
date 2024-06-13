@@ -1,6 +1,7 @@
 import signImg from "../../assets/images/login.png";
 import googleImg from "../../assets/images/google.png";
 import facebookImg from "../../assets/images/facebook.png";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -25,7 +26,7 @@ function Login() {
             Sign In with Google
           </div>
           <div className="w-auto bg-slate-300 flex items-center p-1 rounded-md cursor-pointer">
-            <img src={facebookImg} className="w-5 mr-2" />
+            <img src={facebookImg} className="w-5 mr-2" loading="lazy" />
             Sign In with Facebook
           </div>
         </div>
@@ -54,9 +55,12 @@ function Login() {
         </button>
         <div className="flex justify-start items-start w-3/4">
           Don't have a account?{" "}
-          <span className="ml-1 text-indigo-600 font-semibold cursor-pointer">
+          <Link
+            to="/signUp"
+            className="ml-1 text-indigo-600 font-semibold cursor-pointer"
+          >
             Sign Up
-          </span>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 
 function Navbar() {
@@ -96,13 +96,16 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-end mr-5">
-          <a className="mr-5 font-bold cursor-pointer">Sign In</a>
-          <button
+          <Link to="signIn" className="mr-5 font-bold cursor-pointer">
+            Sign In
+          </Link>
+          <Link
+            to="signUp"
             className="btn btn-outline btn-primary"
             style={{ height: "2.4rem", minHeight: "2.4rem" }}
           >
             Get Started
-          </button>
+          </Link>
         </div>
       </div>
       <Outlet />

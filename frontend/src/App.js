@@ -21,20 +21,15 @@ function App() {
           index: true,
           element: <Home />,
         },
-        // {
-        //   path: "signIn",
-        //   element: <Login />,
-        //   /*  element: authUser ? <Navigate to="/" /> : <Login />, */
-        // },
-        {
-          path: "signUp",
-          element: authUser ? <Navigate to="/" /> : <Signup />,
-        },
       ],
     },
     {
       path: "signIn",
       element: authUser ? <Navigate to="/" /> : <Login />,
+    },
+    {
+      path: "signUp",
+      element: authUser ? <Navigate to="/" /> : <Signup />,
     },
   ]);
   return (

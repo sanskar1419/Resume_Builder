@@ -40,7 +40,7 @@ function Login() {
         />
 
         <input
-          type="text"
+          type="password"
           className="w-3/4 bg-transparent mb-3 outline-none"
           placeholder="Password"
           style={{ borderBottom: "2px solid grey" }}
@@ -54,7 +54,9 @@ function Login() {
         </button>
         <div className="flex justify-start items-start w-3/4">
           Don't have a account?{" "}
-          <span className="ml-1 text-indigo-600 font-semibold">Sign Up</span>
+          <span className="ml-1 text-indigo-600 font-semibold cursor-pointer">
+            Sign Up
+          </span>
         </div>
       </div>
     </div>

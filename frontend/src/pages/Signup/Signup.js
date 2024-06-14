@@ -2,6 +2,8 @@ import signImg from "../../assets/images/SignUp.png";
 import googleImg from "../../assets/images/google.png";
 import facebookImg from "../../assets/images/facebook.png";
 import { Link } from "react-router-dom";
+import childImg from "../../assets/images/Child_Holding_Resume.png";
+import goback from "../../assets/images/goback.png";
 
 function Signup() {
   return (
@@ -14,8 +16,16 @@ function Signup() {
         src={signImg}
         className="absolute w-1/2 bottom-0"
         style={{ left: "-100px" }}
-        loading="lazy"
       />
+
+      <Link to="/">
+        <button
+          className="btn btn-primary flex items-center justify-center absolute top-0 right-0 bg-indigo-700 w-14"
+          style={{ borderRadius: "75px 0 0 75px" }}
+        >
+          <img src={goback} className="w-8" />
+        </button>
+      </Link>
 
       <div
         className="w-3/5 h-screen bg-blue-50 flex items-center justify-center p-10 flex-col"
@@ -80,6 +90,11 @@ function Signup() {
           >
             Sign In
           </Link>
+          <img
+            src={childImg}
+            className=" absolute w-2/12"
+            style={{ right: "-50px", bottom: "0" }}
+          />
         </div>
       </div>
     </div>

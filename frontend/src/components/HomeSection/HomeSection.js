@@ -33,7 +33,7 @@ function HomeSection() {
       <img
         src={childImg}
         className=" absolute w-2/12"
-        style={{ right: "0", bottom: "40px" }}
+        style={{ right: "0", bottom: "5%" }}
       />
       <img src={resumeImg} className=" w-2/5 h-full" />
     </div>

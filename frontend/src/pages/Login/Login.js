@@ -2,7 +2,8 @@ import signImg from "../../assets/images/login.png";
 import googleImg from "../../assets/images/google.png";
 import facebookImg from "../../assets/images/facebook.png";
 import { Link } from "react-router-dom";
-
+import childImg from "../../assets/images/Child_Holding_Resume.png";
+import goback from "../../assets/images/goback.png";
 function Login() {
   return (
     <div
@@ -10,12 +11,15 @@ function Login() {
       data-theme="light"
       style={{ minHeight: "100vh" }}
     >
-      <img
-        src={signImg}
-        className="absolute w-5/12 bottom-0 left-0"
-        loading="lazy"
-      />
-
+      <img src={signImg} className="absolute w-5/12 bottom-0 left-0" />
+      <Link to="/">
+        <button
+          className="btn btn-primary flex items-center justify-center absolute top-0 right-0 bg-indigo-700 w-14"
+          style={{ borderRadius: "75px 0 0 75px" }}
+        >
+          <img src={goback} className="w-8" />
+        </button>
+      </Link>
       <div
         className="w-3/5 h-screen bg-blue-50 flex items-center justify-center p-10 flex-col"
         style={{ borderRadius: "75px 0 0 75px" }}
@@ -52,7 +56,7 @@ function Login() {
         />
 
         <button
-          className="btn bg-indigo-600 w-3/4 text-white mt-3 font-bold mb-4"
+          className="btn btn-primary bg-indigo-600 w-3/4 text-white mt-3 font-bold mb-4"
           style={{ height: "2.4rem", minHeight: "2.4rem" }}
         >
           Sign In
@@ -65,6 +69,11 @@ function Login() {
           >
             Sign Up
           </Link>
+          <img
+            src={childImg}
+            className=" absolute"
+            style={{ right: "0", bottom: "0", width: "12%" }}
+          />
         </div>
       </div>
     </div>

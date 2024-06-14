@@ -12,8 +12,9 @@ function Signup() {
     >
       <img
         src={signImg}
-        className="absolute w-3/5 bottom-0"
-        style={{ left: "-150px" }}
+        className="absolute w-1/2 bottom-0"
+        style={{ left: "-100px" }}
+        loading="lazy"
       />
 
       <div
@@ -66,7 +67,7 @@ function Signup() {
         />
 
         <button
-          className="btn bg-indigo-600 w-3/4 text-white mt-3 font-bold mb-4"
+          className="btn btn-primary bg-indigo-600 w-3/4 text-white mt-3 font-bold mb-4"
           style={{ height: "2.4rem", minHeight: "2.4rem" }}
         >
           Create Account

@@ -10,7 +10,11 @@ function Login() {
       data-theme="light"
       style={{ minHeight: "100vh" }}
     >
-      <img src={signImg} className="absolute w-5/12 bottom-0 left-0" />
+      <img
+        src={signImg}
+        className="absolute w-5/12 bottom-0 left-0"
+        loading="lazy"
+      />
 
       <div
         className="w-3/5 h-screen bg-blue-50 flex items-center justify-center p-10 flex-col"

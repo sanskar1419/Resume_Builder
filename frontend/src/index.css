@@ -19,3 +19,47 @@ body {
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.color-indigo {
+  animation: indigo-color 5s ease-in-out infinite forwards;
+}
+
+.bg-indigo {
+  animation: indigo-bg 5s ease-in-out infinite forwards;
+}
+
+@keyframes indigo-bg {
+  0% {
+    background-color: rgb(116, 8, 194);
+  }
+  25% {
+    background-color: rgb(154, 40, 235);
+  }
+  50% {
+    background-color: rgb(97, 20, 151);
+  }
+  75% {
+    background-color: rgb(143, 12, 236);
+  }
+  100% {
+    background-color: rgb(88, 6, 142);
+  }
+}
+
+@keyframes indigo-color {
+  0% {
+    color: rgb(116, 8, 194);
+  }
+  25% {
+    color: rgb(154, 40, 235);
+  }
+  50% {
+    color: rgb(97, 20, 151);
+  }
+  75% {
+    color: rgb(143, 12, 236);
+  }
+  100% {
+    color: rgb(88, 6, 142);
+  }
+}

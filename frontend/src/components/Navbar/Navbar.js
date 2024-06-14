@@ -4,7 +4,7 @@ import logo from "../../assets/images/logo.png";
 function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 w-auto" data-theme="winter">
+      <div className="navbar bg-base-100 w-auto" data-theme="synthwave">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,11 +47,11 @@ function Navbar() {
             </ul>
           </div>
           <div>
-            <a className="text-xl font-extrabold flex">
+            <div className="text-xl font-extrabold flex items-center justify-center">
               {" "}
-              <img src={logo} alt="logo" className="mr-2 w-24" />
+              <img src={logo} alt="logo" className="mr-2 w-10" />
               wow.resume
-            </a>
+            </div>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -62,7 +62,7 @@ function Navbar() {
             <li>
               <details>
                 <summary>Resume</summary>
-                <ul className="p-2 w-80 font-extrabold">
+                <ul className="p-2 w-80 font-extrabold z-50">
                   <li>
                     <a className="flex flex-col items-start">
                       <a>Resume Builder</a>

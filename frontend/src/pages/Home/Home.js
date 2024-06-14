@@ -1,11 +1,13 @@
+import HomeSection from "../../components/HomeSection/HomeSection.js";
+
 function Home() {
   return (
     <div
-      className="h-auto justify-center overflow-scroll no-scrollbar bg-blue-50"
+      className="h-auto flex justify-start overflow-scroll no-scrollbar bg-blue-50 flex-col"
       data-theme="light"
       style={{ minHeight: "85vh" }}
     >
-      {/* <h1 className="text-blue">This my Home Page</h1> */}
+      <HomeSection />
     </div>
   );
 }

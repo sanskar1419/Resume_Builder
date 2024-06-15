@@ -9,6 +9,7 @@ import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import { useAuthContextValue } from "./context/AuthContext";
 import ResumeBuilderStep from "./pages/ResumeBuilderStep/ResumeBuilderStep";
+import Template1 from "./components/Template/Template1/Template1";
 
 function App() {
   const { authUser } = useAuthContextValue();
@@ -35,6 +36,10 @@ function App() {
     {
       path: "steps",
       element: <ResumeBuilderStep />,
+    },
+    {
+      path: "template",
+      element: <Template1 />,
     },
   ]);
   return (

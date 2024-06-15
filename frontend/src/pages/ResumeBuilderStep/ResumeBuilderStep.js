@@ -59,7 +59,7 @@ function ResumeBuilderStep() {
         </ul>
 
         <button
-          className="btn btn-primary bg-black outline-none border-transparent w-3/4 text-white mt-3 font-bold mb-4"
+          className="btn btn-primary bg-black outline-none border-transparent w-3/4 text-white mt-7 font-bold mb-4"
           style={{ height: "2.4rem", minHeight: "2.4rem" }}
         >
           Build Resume

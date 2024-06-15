@@ -1,6 +1,7 @@
 import homeImg from "../../assets/images/Man_Holding_Resume.png";
 import resumeImg from "../../assets/images/resume.png";
 import childImg from "../../assets/images/Child_Holding_Resume.png";
+import { Link } from "react-router-dom";
 
 function HomeSection() {
   return (
@@ -22,12 +23,13 @@ function HomeSection() {
           Build a professional and outstanding resume with our free builder and
           templates.
         </div>
-        <button
+        <Link
+          to="steps"
           className="btn btn-primary bg-indigo-600 w-1/2 text-white mt-3 font-bold mb-4 bg-indigo"
           style={{ height: "2.4rem", minHeight: "2.4rem" }}
         >
           Create New Resume For Free
-        </button>
+        </Link>
       </div>
       <img src={homeImg} className=" absolute w-2/5" style={{ right: "15%" }} />
       <img

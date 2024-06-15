@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import { useAuthContextValue } from "./context/AuthContext";
+import ResumeBuilderStep from "./pages/ResumeBuilderStep/ResumeBuilderStep";
 
 function App() {
   const { authUser } = useAuthContextValue();
@@ -30,6 +31,10 @@ function App() {
     {
       path: "signUp",
       element: authUser ? <Navigate to="/" /> : <Signup />,
+    },
+    {
+      path: "steps",
+      element: <ResumeBuilderStep />,
     },
   ]);
   return (

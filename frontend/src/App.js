@@ -12,6 +12,8 @@ import ResumeBuilderStep from "./pages/ResumeBuilderStep/ResumeBuilderStep";
 import Template1 from "./components/Template/Template1/Template1";
 import Template2 from "./components/Template/Template2/Template2";
 import Template3 from "./components/Template/Template3/Template3";
+import Template4 from "./components/Template/Template4/Template4";
+import Template5 from "./components/Template/Template5/Template5";
 
 function App() {
   const { authUser } = useAuthContextValue();
@@ -41,7 +43,7 @@ function App() {
     },
     {
       path: "template",
-      element: <Template3 />,
+      element: <Template5 />,
     },
   ]);
   return (

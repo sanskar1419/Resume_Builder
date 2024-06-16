@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #dddddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #2a2a72; /* Main title color */
+}
+
+.header h2 {
+  margin: 5px 0 10px;
+  font-size: 1.5em;
+  color: #4a4a8a; /* Subtitle color */
+}
+
+.header p {
+  color: #555555; /* Description text color */
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  width: 30%;
+  padding-right: 20px;
+  border-right: 2px solid #dddddd;
+}
+
+.main {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  font-size: 1.2em;
+  color: #2a2a72; /* Section title color */
+  border-bottom: 2px solid #dddddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.section p,
+.section ul,
+.section li {
+  color: #555555; /* General text color */
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-bottom: 0.5em;
+}
+
+.experience h4 {
+  margin: 0;
+  color: #2a2a72; /* Experience date color */
+}
+
+.experience h5 {
+  margin: 5px 0 10px;
+  color: #4a4a8a; /* Job title color */
+}
+
+.reference p {
+  margin: 5px 0;
+}
